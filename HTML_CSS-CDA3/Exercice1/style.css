@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+}
+#rouge{
+    background-color: red;
+    height: 100px;
+}
+#vert{
+    background-color: green;
+    width: 50%;
+    height: 75vh;
+}
+#jaune{
+    background-color: yellow;
+    width: 50%;
+    height: 75vh;
+}
+#bleu{
+    background-color: blue;
+    height: 100px;
+}
+#conteneur{
+    display: flex;
+}
+
+@media screen and (max-width: 500px){
+    #conteneur_mobile{
+        display:flex;
+        flex-direction: column;
+    }
+    #conteneur{
+        flex-direction: column-reverse;
+        order:1;
+        width: 200vw;
+    }
+    #bleu{
+        order: 3;
+    }
+    #rouge{
+        order: 4;
+    }
+}

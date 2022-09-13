@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Votre réservation d'hôtel</h1>
+    <h5>* champs obligatoires</h5>
+    <form action="post">
+        <label for="Lname">Votre nom*:</label><br>
+        <input type="text" name="Lname" placeholder="nom de famille"><br>
+        <label for="Fname">Votre prénom*:</label><br>
+        <input type="text" name="Fname" placeholder="prénom"><br>
+        <label for="TelNumber">Votre numéro de télephone*:</label><br>
+        <input type="tel" name="TelNumber" placeholder="0123456789"><br>
+        <label for="Email">Adresse e-mail*:</label><br>
+        <input type="email" name="Email"><br>
+        <label for="TownChoice">Sélectionner la Ville:</label><br>
+        <select name="TownChoice" id="TownChoice">
+            <option value="Lille">Lille</option>
+            <option value="Paris" selected>Paris</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Nantes">Nantes</option>
+            <option value="Lyon">Lyon</option>
+            <option value="LaRochelle">La Rochelle</option>
+            <option value="Poitiers">Poitiers</option>
+            <option value="Toulouse">Toulouse</option>
+        </select><br>
+        <label for="ArrivalDate">Date d'arrivée</label><br>
+        <input type="date" name="ArrivalDate"><br>
+        <label for="NbPeople">Nombre de personnes*:</label><br>
+        <input type="number" name="NbPeople"><br>
+        <label for="OtionChoice">Vos options:</label><br>
+        <label for="OptionChoice">Climatisation</label>
+        <input type="checkbox" name="OptionChoice" value="clim">
+        <label for="OptionChoice">Mini-bar</label>
+        <input type="checkbox" name="OptionChoice" value="minibar">
+        <label for="OptionChoice">Jacuzzi</label>
+        <input type="checkbox" name="OptionChoice" value="jacuzzi"><br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ajouter un commentaire"></textarea><br>
+        <label for="CGVChoice">Acceptation des Conditions Générales de Ventes (CGV)*:</label><br>
+        <input type="radio" name="CGVChoice" value="yes">
+        <label for="CGVChoice">J'accepte</label>
+        <input type="radio" name="CGVChoice" value="no">
+        <label for="CGVChoice">Je refuse</label><br>
+        <input type="submit" value="Envoyer ma demande">
+    </form>
+</body>
+</html>
